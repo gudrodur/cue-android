@@ -34,7 +34,7 @@ touched before opening a PR; `docs/TESTING.md` maps each layer to its test.
 ## Deploy and accounts
 
 - `api/` and `site/` deploy with `wrangler deploy` on the upstream Cloudflare account. The
-  operator needs the Cloudflare credentials and the Worker secrets (`ELEVENLABS_API_KEY`, app
+  operator needs the Cloudflare credentials and the Worker secrets (the ElevenLabs key, app
   tokens, subscription config).
 - No GCP project. `Config/Cloud.xcconfig` and `.env.example` carry non-secret settings;
   never commit real keys or an Apple/Google purchase credential.
